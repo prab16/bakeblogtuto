@@ -1,4 +1,5 @@
 <?php
+
 /**
  *
  *
@@ -68,25 +69,44 @@
  */
 class DATABASE_CONFIG {
 
-	public $default = array(
-		'datasource' => 'Database/Mysql',
-		'persistent' => false,
-		'host' => 'localhost',
-		'login' => 'root',
-		'password' => 'mysql',
-		'database' => 'bakeblogtuto',
-		'prefix' => '',
-		//'encoding' => 'utf8',
-	);
+    public $default = array(
+        'datasource' => 'Database/Mysql',
+        'persistent' => false,
+        'host' => '',
+        'port' => '',
+        'login' => '',
+        'password' => '',
+        'database' => '',
+        'prefix' => '',
+            //'encoding' => 'utf8',
+    );
+    public $test = array(
+        'datasource' => 'Database/Mysql',
+        'persistent' => false,
+        'host' => '',
+        'port' => '',
+        'login' => '',
+        'password' => '',
+        'database' => 'test_database',
+        'prefix' => '',
+            //'encoding' => 'utf8',
+    );
 
-	public $test = array(
-		'datasource' => 'Database/Mysql',
-		'persistent' => false,
-		'host' => 'localhost',
-		'login' => 'user',
-		'password' => 'password',
-		'database' => 'test_database_name',
-		'prefix' => '',
-		//'encoding' => 'utf8',
-	);
+    public function __construct() {
+        if (getenv("OPENSHIFT_MYSQL_DB_HOST")):
+            $this->default['host'] = getenv("OPENSHIFT_MYSQL_DB_HOST");
+            $this->default['port'] = getenv("OPENSHIFT_MYSQL_DB_PORT");
+            $this->default['login'] = getenv("OPENSHIFT_MYSQL_DB_USERNAME");
+            $this->default['password'] = getenv("OPENSHIFT_MYSQL_DB_PASSWORD");
+            $this->default['database'] = getenv("OPENSHIFT_APP_NAME");
+        else:
+            $this->default['host'] = 'localhost';
+            $this->default['port'] = '3306';
+            $this->default['login'] = 'root';
+            $this->default['password'] = 'mysql';
+            $this->default['database'] = 'bakeblogtuto';
+
+        endif;
+    }
+
 }
