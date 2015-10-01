@@ -6,7 +6,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button><!-- /.navbar-toggle -->
-		<?php echo $this->Html->Link(__("Home"), array(
+		<?php echo $this->Html->Link(__("Home") . "v1.1.0", array(
                                             'controller' => 'articles',
                                             'action' => 'index'),
                                             array('class' => 'navbar-brand')); ?>
