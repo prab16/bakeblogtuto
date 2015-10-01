@@ -1,0 +1,100 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"PO-Revision-Date: 2015-09-03 15:54-0400\n"
+"Language-Team: EMAIL@ADDRESS\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"POT-Creation-Date: \n"
+"X-Generator: Poedit 1.8.4\n"
+"Last-Translator: \n"
+"Language: fr_CA\n"
+
+#: Controller/PostsController.php:14;19;38;43
+msgid "Invalid post"
+msgstr ""
+
+#: Controller/PostsController.php:29
+msgid "Your post has been saved."
+msgstr ""
+
+#: Controller/PostsController.php:32
+msgid "Unable to add your post."
+msgstr ""
+
+#: Controller/PostsController.php:49
+msgid "Your post has been updated."
+msgstr ""
+
+#: Controller/PostsController.php:52
+msgid "Unable to update your post."
+msgstr ""
+
+#: Controller/PostsController.php:67
+msgid "The post with id: %s has been deleted."
+msgstr ""
+
+#: Controller/PostsController.php:71
+msgid "The post with id: %s could not be deleted."
+msgstr ""
+
+#: Controller/UsersController.php:18
+msgid "Nom d'user ou mot de passe invalide, réessayer"
+msgstr ""
+
+#: Controller/UsersController.php:35;56;80
+msgid "Invalid user"
+msgstr ""
+
+#: Controller/UsersController.php:44;60
+msgid "The user has been saved"
+msgstr ""
+
+#: Controller/UsersController.php:48;64
+msgid "The user could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/UsersController.php:83
+msgid "User deleted"
+msgstr ""
+
+#: Controller/UsersController.php:86
+msgid "User was not deleted"
+msgstr ""
+
+#: View/Layouts/default.ctp:42
+msgid "Home"
+msgstr "Accueil"
+
+#: View/Users/add.ctp:4
+msgid "Add User"
+msgstr ""
+
+#: View/Users/add.ctp:12
+msgid "Submit"
+msgstr ""
+
+#: View/Users/login.ctp:6
+msgid "Please enter your username and password"
+msgstr ""
+
+#: View/Users/login.ctp:13
+msgid "Login"
+msgstr ""
+
+#: Model/User.php:validation for field username
+msgid "A username is required"
+msgstr ""
+
+#: Model/User.php:validation for field password
+msgid "A password is required"
+msgstr ""
+
+#: Model/User.php:validation for field role
+msgid "Please enter a valid role"
+msgstr ""
